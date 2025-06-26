@@ -1,111 +1,265 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shanghaiwindy (王诗江) 游戏隐私政策</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <!-- 引入Vuetify的CSS -->
+    <link href="css/materialdesignicons.min.css" rel="stylesheet">
+    <link href="css/vuetify.min.css" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+        }
 
-    <!-- 新 Bootstrap 核心 CSS 文件 -->
-    <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.3.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="default.css">
+        .policy-title {
+            margin: 0;
+            color: #333;
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
 
-    <link rel="stylesheet" href="css/animate.css">
+        .policy-subtitle {
+            color: #666;
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
 
-    <script src="js/wow.min.js"></script>
+        .policy-content-card {
+            background: #fff;
+            color: #333;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            max-width: 900px;
+            margin: 20px auto;
+        }
 
+        .section-title {
+            color: #1976d2;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin: 30px 0 20px 0;
+            border-bottom: 2px solid #1976d2;
+            padding-bottom: 10px;
+        }
 
-    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
-    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
-    <script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.3.0/js/bootstrap.min.js"></script>
-    <meta name="description" content="Panzer War The peak of mobile tank
-            game.">
+        .policy-text {
+            line-height: 1.8;
+            margin: 15px 0;
+            font-size: 1rem;
+        }
+
+        .sdk-section {
+            margin: 25px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            border-left: 4px solid #1976d2;
+        }
+
+        .sdk-title {
+            color: #1976d2;
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .sdk-info {
+            background: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 10px 0;
+            border: 1px solid #e0e0e0;
+        }
+
+        .sdk-info p {
+            margin: 8px 0;
+            line-height: 1.6;
+        }
+
+        .sdk-info strong {
+            color: #1976d2;
+        }
+
+        .footer-links a {
+            color: #333;
+        }
+
+        .footer-links {
+            background: #fff;
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 20px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .main-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 80vh;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, #1976d2, #42a5f5);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .policy-title {
+                font-size: 2rem;
+            }
+            
+            .policy-content-card {
+                padding: 20px;
+                margin: 10px;
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <div class="container">
-        <div class="text-center">
-            <h2> Shanghaiwindy (王诗江) 游戏隐私政策</h2>
-            <hr class="featurette-divider">
-        </div>
-        <p>
-            1. 因游戏玩法需要，我们会收集设备的传感器信息，用于操控输入。
-        </p>
+    <div id="app">
+        <v-app>
+            <v-container fill-height>
+                <div class="main-content">
+                    <v-card class="policy-content-card">
+                        <v-card-title class="text-center">
+                            <div>
+                                <h1 class="policy-title">Shanghaiwindy (王诗江) 游戏隐私政策</h1>
+                                <p class="policy-subtitle">Privacy Policy</p>
+                            </div>
+                        </v-card-title>
 
-        <p>
-            2. 我们会使用有能力的第三方服务商提供的软件服务工具包（简称SDK）或能力来为您提供服务
-            。这些SDK或能力会收集和使用您的个人信息，我们会在您授权同意后收集和使用。 SDK 所使用的权限与目的见下方的第三方服务共享清单。
-        </p>
+                        <v-card-text>
+                            <div class="highlight-box">
+                                <h3>🔒 隐私保护承诺</h3>
+                                <p>我们致力于保护您的隐私，本政策详细说明了我们如何收集、使用和保护您的个人信息。</p>
+                            </div>
 
-        <div class="text-center">
-            <h2>第三方服务共享清单</h2>
-            <hr class="featurette-divider">
-        </div>
-        <h3>com.unity3d.player Unity 引擎</h3>
-        <p>
-            第三方主体：优三缔科技（上海）有限公司 </br>
-            使用目的：支持应用内用户的登录情况，留存信息。</br>
-            数据类型：收集 Android ID、安装列表、MAC 信息、设备传感器信息（如加速度计、陀螺仪、磁力计等）</br>
-            处理方式：去标识化和加密处理</br>
-            官网链接：https://unity.cn/
-        </p>
-        <h3>com.anythink.china TopOn 广告</h3>
-        <p>
-            第三方主体：广州塔酷信息科技有限公司</br>
-            使用目的：支持应用内广告功能</br>
-            数据类型：设备信息（设备序列号、IMEI、MAC地址、AndroidID、IDFV、IDFA、OAID、SSID）、网络信息（设备IP地址、路由器标识、网络运营商信息、网络连接状态）、应用信息（Android应用的应用包名、应用名称及版本号、应用签名信息）、软件安装列表</br>
-            处理方式：去标识化和加密处理</br>
-            官网链接：https://www.toponad.com/zh-cn
-        </p>
-        <h3>com.tds.common TapTap 服务</h3>
-        <p>
-            第三方主体：易玩(上海)网络科技有限公司</br>
-            使用目的：TapTap 用户登录服务，防沉迷服务，跳转游戏社区</br>
-            涉及个人信息类型：设备型号、操作系统、设备设置、唯一设备标识符（如AndroidID）、OAID、MAC地址、登陆IP地址、提供TapTap服务的软件版本号、应用列表、设备所在位置相关信息（如WLAN接入点、网络质量数据和基站传感器信息）、设备环境、操作日志、服务日志（当您访问或使用我们的网站或客户端提供的产品或服务，我们会自动获取您的详细使用情况，作为服务日志保存，如您在TapTap进行搜索、查看操作的记录、服务故障信息、引荐网址、电信运营商、使用语言）信息。</br>
-            第三方隐私政策或官网链接：https://www.taptap.com/privacy-policy
-        </p>
-        <h3>RxJava 响应式编程库</h3>
-        <p>
-            第三方主体：ReactiveX</br>
-            使用目的：响应式编程，处理异步操作和流数据</br>
-            数据类型：获取 Android ID、应用安装列表</br>
-            处理方式：去标识化和加密处理</br>
-        </p>
-        
-        <h3>穿山甲广告SDK</h3>
-        <p>
-            第三方主体：北京巨量引擎网络技术有限公司</br>
-            使用目的：广告投放</br>
-            数据类型：设备信息（设备品牌、设备型号、系统版本、IP地址、MAC地址、Android ID）、应用信息、粗略位置信息、Android设备标识符（如IMEI、OAID、IMSI、设备序列号）、传感器信息、应用安装列表</br>
-            处理方式：去标识化和加密处理</br>
-            官网链接：https://www.csjplatform.com/privacy/partner
-        </p>
-        
-        <h3>MSA移动安全联盟SDK</h3>
-        <p>
-            第三方主体：电信终端产业协会移动安全工作委员会</br>
-            使用目的：风控、Bug修复</br>
-            数据类型：设备型号、设备类型、OAID</br>
-            处理方式：去标识化和加密处理</br>
-            官网链接：http://www.msa-alliance.cn/col.jsp?id=120
-        </p>
-        
+                            <h2 class="section-title">📋 基本信息</h2>
+                            <p class="policy-text">
+                                1. 因游戏玩法需要，我们会收集设备的传感器信息，用于操控输入。
+                            </p>
 
-        <footer>
-            <p>最后修改与生效日期: 十二月 4, 2023</p>
-            <p>
-                <a href="https://beian.miit.gov.cn/" target="_blank">网站备案信息：沪ICP备15036213号</a>
-            </p>
-            <p>
-                <img src="images/police.png" width="15px" height="15px">
-                <a href="https://beian.mps.gov.cn/#/query/webSearch?code=31011302007801" rel="noreferrer"
-                    target="_blank">沪公网安备31011302007801</a>
-            </p>
-        </footer>
+                            <p class="policy-text">
+                                2. 我们会使用有能力的第三方服务商提供的软件服务工具包（简称SDK）或能力来为您提供服务。这些SDK或能力会收集和使用您的个人信息，我们会在您授权同意后收集和使用。SDK 所使用的权限与目的见下方的第三方服务共享清单。
+                            </p>
+
+                            <h2 class="section-title">🔗 第三方服务共享清单</h2>
+
+                            <div class="sdk-section">
+                                <h3 class="sdk-title">com.unity3d.player Unity 引擎</h3>
+                                <div class="sdk-info">
+                                    <p><strong>第三方主体：</strong>优三缔科技（上海）有限公司</p>
+                                    <p><strong>使用目的：</strong>支持应用内用户的登录情况，留存信息。</p>
+                                    <p><strong>数据类型：</strong>收集 Android ID、安装列表、MAC 信息、设备传感器信息（如加速度计、陀螺仪、磁力计等）</p>
+                                    <p><strong>处理方式：</strong>去标识化和加密处理</p>
+                                    <p><strong>官网链接：</strong><a href="https://unity.cn/" target="_blank">https://unity.cn/</a></p>
+                                </div>
+                            </div>
+
+                            <div class="sdk-section">
+                                <h3 class="sdk-title">com.anythink.china TopOn 广告</h3>
+                                <div class="sdk-info">
+                                    <p><strong>第三方主体：</strong>广州塔酷信息科技有限公司</p>
+                                    <p><strong>使用目的：</strong>支持应用内广告功能</p>
+                                    <p><strong>数据类型：</strong>设备信息（设备序列号、IMEI、MAC地址、AndroidID、IDFV、IDFA、OAID、SSID）、网络信息（设备IP地址、路由器标识、网络运营商信息、网络连接状态）、应用信息（Android应用的应用包名、应用名称及版本号、应用签名信息）、软件安装列表</p>
+                                    <p><strong>处理方式：</strong>去标识化和加密处理</p>
+                                    <p><strong>官网链接：</strong><a href="https://www.toponad.com/zh-cn" target="_blank">https://www.toponad.com/zh-cn</a></p>
+                                </div>
+                            </div>
+
+                            <div class="sdk-section">
+                                <h3 class="sdk-title">com.tds.common TapTap 服务</h3>
+                                <div class="sdk-info">
+                                    <p><strong>第三方主体：</strong>易玩(上海)网络科技有限公司</p>
+                                    <p><strong>使用目的：</strong>TapTap 用户登录服务，防沉迷服务，跳转游戏社区</p>
+                                    <p><strong>涉及个人信息类型：</strong>设备型号、操作系统、设备设置、唯一设备标识符（如AndroidID）、OAID、MAC地址、登陆IP地址、提供TapTap服务的软件版本号、应用列表、设备所在位置相关信息（如WLAN接入点、网络质量数据和基站传感器信息）、设备环境、操作日志、服务日志（当您访问或使用我们的网站或客户端提供的产品或服务，我们会自动获取您的详细使用情况，作为服务日志保存，如您在TapTap进行搜索、查看操作的记录、服务故障信息、引荐网址、电信运营商、使用语言）信息。</p>
+                                    <p><strong>第三方隐私政策或官网链接：</strong><a href="https://www.taptap.com/privacy-policy" target="_blank">https://www.taptap.com/privacy-policy</a></p>
+                                </div>
+                            </div>
+
+                            <div class="sdk-section">
+                                <h3 class="sdk-title">RxJava 响应式编程库</h3>
+                                <div class="sdk-info">
+                                    <p><strong>第三方主体：</strong>ReactiveX</p>
+                                    <p><strong>使用目的：</strong>响应式编程，处理异步操作和流数据</p>
+                                    <p><strong>数据类型：</strong>获取 Android ID、应用安装列表</p>
+                                    <p><strong>处理方式：</strong>去标识化和加密处理</p>
+                                </div>
+                            </div>
+
+                            <div class="sdk-section">
+                                <h3 class="sdk-title">穿山甲广告SDK</h3>
+                                <div class="sdk-info">
+                                    <p><strong>第三方主体：</strong>北京巨量引擎网络技术有限公司</p>
+                                    <p><strong>使用目的：</strong>广告投放</p>
+                                    <p><strong>数据类型：</strong>设备信息（设备品牌、设备型号、系统版本、IP地址、MAC地址、Android ID）、应用信息、粗略位置信息、Android设备标识符（如IMEI、OAID、IMSI、设备序列号）、传感器信息、应用安装列表</p>
+                                    <p><strong>处理方式：</strong>去标识化和加密处理</p>
+                                    <p><strong>官网链接：</strong><a href="https://www.csjplatform.com/privacy/partner" target="_blank">https://www.csjplatform.com/privacy/partner</a></p>
+                                </div>
+                            </div>
+
+                            <div class="sdk-section">
+                                <h3 class="sdk-title">MSA移动安全联盟SDK</h3>
+                                <div class="sdk-info">
+                                    <p><strong>第三方主体：</strong>电信终端产业协会移动安全工作委员会</p>
+                                    <p><strong>使用目的：</strong>风控、Bug修复</p>
+                                    <p><strong>数据类型：</strong>设备型号、设备类型、OAID</p>
+                                    <p><strong>处理方式：</strong>去标识化和加密处理</p>
+                                    <p><strong>官网链接：</strong><a href="http://www.msa-alliance.cn/col.jsp?id=120" target="_blank">http://www.msa-alliance.cn/col.jsp?id=120</a></p>
+                                </div>
+                            </div>
+
+                            <v-card-actions class="justify-center">
+                                <a href="https://beian.miit.gov.cn/" target="_blank"
+                                    style="color: #666; text-decoration: none;">
+                                    App 备案信息：沪ICP备15036213号-2A
+                                </a>
+                            </v-card-actions>
+                        </v-card-text>
+                    </v-card>
+                </div>
+            </v-container>
+
+            <v-footer class="footer-links text-center">
+                <v-col>
+                    <p>最后修改与生效日期: 十二月 4, 2023</p>
+                    <p>
+                        <a href="https://beian.miit.gov.cn/" target="_blank">网站备案信息：沪ICP备15036213号</a>
+                    </p>
+                    <p>
+                        <img src="images/police.png" width="15px" height="15px">
+                        <a href="https://beian.mps.gov.cn/#/query/webSearch?code=31011302007801" rel="noreferrer"
+                            target="_blank">沪公网安备31011302007801</a>
+                    </p>
+                </v-col>
+            </v-footer>
+        </v-app>
     </div>
 
+    <!-- 引入Vue和Vuetify的JS -->
+    <script src="js/vue@2.js"></script>
+    <script src="js/vuetify.js"></script>
+    <script>
+        new Vue({
+            el: '#app',
+            vuetify: new Vuetify()
+        })
+    </script>
 </body>
 
 </html>
