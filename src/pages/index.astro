@@ -11,6 +11,7 @@ import Layout from '../layouts/Layout.astro'
       <p class="mt-4 max-w-2xl mx-auto text-g-text-secondary leading-relaxed">
         从一战到冷战时期的各种历史上真实存在的坦克，在多种战场和模式中展开对战。无需肝线——所有车辆可立即使用，让你专注于纯粹的战斗体验。
       </p>
+
       <!-- Notice -->
       <div class="mt-6 max-w-2xl mx-auto bg-g-bg-surface border border-g-gold/20 rounded-xl px-6 py-4 text-sm text-g-text-secondary leading-relaxed space-y-2">
         <p>本版本为<strong class="text-g-parchment">国服测试版本</strong>，与国际服数据不互通。目前处于<strong class="text-g-parchment">删档测试阶段</strong>，在本轮游戏测试结束后，将不保留玩家数据。所有用户数据均保存在中国大陆境内。</p>
@@ -54,8 +55,32 @@ import Layout from '../layouts/Layout.astro'
     </div>
   </section>
 
+  <!-- Stats -->
+  <section class="max-w-5xl mx-auto px-4 -mt-6 relative z-10">
+    <div class="bg-g-bg-surface border border-g-divider rounded-xl p-8">
+      <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4 text-center">
+        <div>
+          <p class="text-3xl font-bold text-g-gold">200+</p>
+          <p class="text-g-text-secondary text-sm mt-1">历史坦克</p>
+        </div>
+        <div>
+          <p class="text-3xl font-bold text-g-gold">8.7</p>
+          <p class="text-g-text-secondary text-sm mt-1">TapTap 评分</p>
+        </div>
+        <div>
+          <p class="text-3xl font-bold text-g-gold">7</p>
+          <p class="text-g-text-secondary text-sm mt-1">游戏模式</p>
+        </div>
+        <div>
+          <p class="text-3xl font-bold text-g-gold">472MB</p>
+          <p class="text-g-text-secondary text-sm mt-1">安装包大小</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Screenshots -->
-  <section class="max-w-5xl mx-auto px-4 -mt-4 relative z-10">
+  <section class="max-w-5xl mx-auto px-4 py-16">
     <div class="grid gap-4 sm:grid-cols-2">
       <img
         src="/game-1.webp"
@@ -69,50 +94,6 @@ import Layout from '../layouts/Layout.astro'
         class="rounded-xl border border-g-border shadow-2xl w-full h-auto object-cover hover:scale-[1.02] transition-transform duration-300"
         loading="lazy"
       />
-    </div>
-  </section>
-
-  <!-- Game Modes -->
-  <section class="max-w-5xl mx-auto px-4 py-16">
-    <h2 class="text-3xl font-bold text-g-parchment mb-2">游戏模式</h2>
-    <div class="w-12 h-1 bg-g-gold rounded mb-8"></div>
-
-    <!-- Offline -->
-    <h3 class="text-lg font-semibold text-g-parchment mb-4">离线游戏模式</h3>
-    <div class="grid gap-4 sm:grid-cols-2 mb-8">
-      <div class="bg-g-bg-panel border border-g-divider rounded-xl p-6 hover:border-g-gold/30 transition-colors">
-        <h4 class="text-base font-semibold text-g-gold mb-2">遭遇战模式</h4>
-        <p class="text-g-text-secondary text-sm leading-relaxed">参与快速激烈的战斗，你可以在开放的战斗环境中与AI对战。</p>
-      </div>
-      <div class="bg-g-bg-panel border border-g-divider rounded-xl p-6 hover:border-g-gold/30 transition-colors">
-        <h4 class="text-base font-semibold text-g-gold mb-2">N vs N 闪电战</h4>
-        <p class="text-g-text-secondary text-sm leading-relaxed">体验大规模团队战斗，协调和策略是胜利的关键。</p>
-      </div>
-      <div class="bg-g-bg-panel border border-g-divider rounded-xl p-6 hover:border-g-gold/30 transition-colors">
-        <h4 class="text-base font-semibold text-g-gold mb-2">占点模式</h4>
-        <p class="text-g-text-secondary text-sm leading-relaxed">控制地图上的战略点，以获得战斗的优势。</p>
-      </div>
-      <div class="bg-g-bg-panel border border-g-divider rounded-xl p-6 hover:border-g-gold/30 transition-colors">
-        <h4 class="text-base font-semibold text-g-gold mb-2">阵营战</h4>
-        <p class="text-g-text-secondary text-sm leading-relaxed">选择不同阵营参战，体验阵营间的装甲对决。</p>
-      </div>
-    </div>
-
-    <!-- Online -->
-    <h3 class="text-lg font-semibold text-g-parchment mb-4">在线多人游戏模式</h3>
-    <div class="grid gap-4 sm:grid-cols-3">
-      <div class="bg-g-bg-panel border border-g-divider rounded-xl p-6 hover:border-g-gold/30 transition-colors">
-        <h4 class="text-base font-semibold text-g-gold mb-2">遭遇战模式</h4>
-        <p class="text-g-text-secondary text-sm leading-relaxed">在竞争激烈的快速战斗中与其他玩家一较高下。</p>
-      </div>
-      <div class="bg-g-bg-panel border border-g-divider rounded-xl p-6 hover:border-g-gold/30 transition-colors">
-        <h4 class="text-base font-semibold text-g-gold mb-2">占点模式</h4>
-        <p class="text-g-text-secondary text-sm leading-relaxed">与团队合作，在紧张的多人对战中争夺控制点。</p>
-      </div>
-      <div class="bg-g-bg-panel border border-g-divider rounded-xl p-6 hover:border-g-gold/30 transition-colors">
-        <h4 class="text-base font-semibold text-g-gold mb-2">茶话会</h4>
-        <p class="text-g-text-secondary text-sm leading-relaxed">与朋友享受有趣的闲暇时光。</p>
-      </div>
     </div>
   </section>
 
@@ -175,50 +156,53 @@ import Layout from '../layouts/Layout.astro'
     </div>
   </section>
 
-  <!-- About -->
+  <!-- Game Modes -->
   <section class="max-w-5xl mx-auto px-4 py-16">
-    <h2 class="text-3xl font-bold text-g-parchment mb-2">关于游戏</h2>
+    <h2 class="text-3xl font-bold text-g-parchment mb-2">游戏模式</h2>
     <div class="w-12 h-1 bg-g-gold rounded mb-8"></div>
-    <div class="bg-g-bg-panel border border-g-divider rounded-xl p-8 space-y-4 text-g-text-secondary leading-relaxed">
-      <p>
-        在这款创新的坦克对战游戏中，玩家将体验到前所未有的战斗冲击和策略深度。游戏支持多种模式，包括占点模式、遭遇战、闪电战和阵营战，还提供了一个独特的试车场，让玩家可以在进入真正的战斗前测试和调整他们的战斗单位。
-      </p>
-      <p>
-        在占点模式中，玩家需要运用智谋和战术，占领并保持关键的战略点位。每个点位的占领都将为玩家带来资源和优势，但同时也需要防守，防止敌人夺回。遭遇战模式则是一场纯粹的力量对抗，双方在特定地图上进行直接的军事冲突，考验玩家的战术布局和实时反应能力。
-      </p>
-      <p>
-        闪电战模式则要求玩家快速行动，通过突袭和迅速部署来压倒敌人。这些多样的游戏模式不仅提供了丰富的游戏体验，也让玩家可以根据自己的喜好选择合适的挑战。
-      </p>
-    </div>
-  </section>
 
-  <!-- Game Info -->
-  <section class="max-w-5xl mx-auto px-4 pb-16">
-    <div class="bg-g-bg-surface border border-g-divider rounded-xl p-8">
-      <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4 text-center">
-        <div>
-          <p class="text-3xl font-bold text-g-gold">200+</p>
-          <p class="text-g-text-secondary text-sm mt-1">历史坦克</p>
-        </div>
-        <div>
-          <p class="text-3xl font-bold text-g-gold">8.7</p>
-          <p class="text-g-text-secondary text-sm mt-1">TapTap 评分</p>
-        </div>
-        <div>
-          <p class="text-3xl font-bold text-g-gold">7</p>
-          <p class="text-g-text-secondary text-sm mt-1">游戏模式</p>
-        </div>
-        <div>
-          <p class="text-3xl font-bold text-g-gold">472MB</p>
-          <p class="text-g-text-secondary text-sm mt-1">安装包大小</p>
-        </div>
+    <!-- Offline -->
+    <h3 class="text-lg font-semibold text-g-parchment mb-4">离线游戏模式</h3>
+    <div class="grid gap-4 sm:grid-cols-2 mb-8">
+      <div class="bg-g-bg-panel border border-g-divider rounded-xl p-6 hover:border-g-gold/30 transition-colors">
+        <h4 class="text-base font-semibold text-g-gold mb-2">遭遇战模式</h4>
+        <p class="text-g-text-secondary text-sm leading-relaxed">参与快速激烈的战斗，你可以在开放的战斗环境中与AI对战。</p>
+      </div>
+      <div class="bg-g-bg-panel border border-g-divider rounded-xl p-6 hover:border-g-gold/30 transition-colors">
+        <h4 class="text-base font-semibold text-g-gold mb-2">N vs N 闪电战</h4>
+        <p class="text-g-text-secondary text-sm leading-relaxed">体验大规模团队战斗，协调和策略是胜利的关键。</p>
+      </div>
+      <div class="bg-g-bg-panel border border-g-divider rounded-xl p-6 hover:border-g-gold/30 transition-colors">
+        <h4 class="text-base font-semibold text-g-gold mb-2">占点模式</h4>
+        <p class="text-g-text-secondary text-sm leading-relaxed">控制地图上的战略点，以获得战斗的优势。</p>
+      </div>
+      <div class="bg-g-bg-panel border border-g-divider rounded-xl p-6 hover:border-g-gold/30 transition-colors">
+        <h4 class="text-base font-semibold text-g-gold mb-2">阵营战</h4>
+        <p class="text-g-text-secondary text-sm leading-relaxed">选择不同阵营参战，体验阵营间的装甲对决。</p>
+      </div>
+    </div>
+
+    <!-- Online -->
+    <h3 class="text-lg font-semibold text-g-parchment mb-4">在线多人游戏模式</h3>
+    <div class="grid gap-4 sm:grid-cols-3">
+      <div class="bg-g-bg-panel border border-g-divider rounded-xl p-6 hover:border-g-gold/30 transition-colors">
+        <h4 class="text-base font-semibold text-g-gold mb-2">遭遇战模式</h4>
+        <p class="text-g-text-secondary text-sm leading-relaxed">在竞争激烈的快速战斗中与其他玩家一较高下。</p>
+      </div>
+      <div class="bg-g-bg-panel border border-g-divider rounded-xl p-6 hover:border-g-gold/30 transition-colors">
+        <h4 class="text-base font-semibold text-g-gold mb-2">占点模式</h4>
+        <p class="text-g-text-secondary text-sm leading-relaxed">与团队合作，在紧张的多人对战中争夺控制点。</p>
+      </div>
+      <div class="bg-g-bg-panel border border-g-divider rounded-xl p-6 hover:border-g-gold/30 transition-colors">
+        <h4 class="text-base font-semibold text-g-gold mb-2">茶话会</h4>
+        <p class="text-g-text-secondary text-sm leading-relaxed">与朋友享受有趣的闲暇时光。</p>
       </div>
     </div>
   </section>
 
   <!-- Partnership -->
-  <section class="max-w-5xl mx-auto px-4 pb-16">
-    <div class="bg-g-bg-panel border border-g-gold/20 rounded-xl p-8 text-center">
+  <section class="bg-g-bg-panel border-y border-g-divider">
+    <div class="max-w-5xl mx-auto px-4 py-16 text-center">
       <p class="text-sm text-g-gold font-semibold tracking-widest uppercase mb-3">诚邀合作伙伴</p>
       <h2 class="text-2xl font-bold text-g-parchment">装甲纷争 正在寻求专业的出版社与代理商合作</h2>
       <p class="mt-4 max-w-2xl mx-auto text-g-text-secondary leading-relaxed">
@@ -239,5 +223,4 @@ import Layout from '../layouts/Layout.astro'
       </a>
     </div>
   </section>
-
 </Layout>
