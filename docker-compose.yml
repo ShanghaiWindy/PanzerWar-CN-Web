@@ -1,0 +1,12 @@
+services:
+  web:
+    build: .
+    restart: always
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - caddy_data:/data
+
+volumes:
+  caddy_data:
