@@ -1,0 +1,18 @@
+waroftanks.cn, www.waroftanks.cn {
+	root * /srv
+	file_server
+	encode gzip
+
+	header {
+		X-Frame-Options "SAMEORIGIN"
+		X-Content-Type-Options "nosniff"
+	}
+
+	@static path *.js *.css *.png *.jpg *.jpeg *.gif *.ico *.svg *.woff *.woff2
+	header @static Cache-Control "public, max-age=2592000, immutable"
+
+	handle_errors {
+		rewrite * /index.html
+		file_server
+	}
+}
