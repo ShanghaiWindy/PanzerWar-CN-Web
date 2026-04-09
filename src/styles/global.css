@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@theme {
+  /* Backgrounds — from GameTheme.uss */
+  --color-g-bg-deep: rgb(20, 22, 26);
+  --color-g-bg-panel: rgb(30, 32, 36);
+  --color-g-bg-surface: rgb(42, 44, 50);
+  --color-g-bg-input: rgb(48, 50, 56);
+
+  /* Text */
+  --color-g-text-primary: rgb(200, 196, 188);
+  --color-g-text-secondary: rgb(148, 145, 138);
+  --color-g-text-tertiary: rgb(100, 98, 92);
+
+  /* Borders */
+  --color-g-border: rgb(74, 78, 84);
+  --color-g-border-strong: rgb(128, 132, 138);
+  --color-g-divider: rgb(48, 50, 56);
+
+  /* Accents */
+  --color-g-gold: rgb(202, 170, 87);
+  --color-g-parchment: rgb(230, 226, 216);
+  --color-g-red: rgb(196, 62, 46);
+
+  /* Semi-transparent */
+  --color-g-panel-bg: rgba(30, 32, 36, 0.92);
+  --color-g-surface-glass: rgba(42, 44, 50, 0.75);
+  --color-g-gold-dim: rgba(202, 170, 87, 0.15);
+  --color-g-focus-ring: rgba(202, 170, 87, 0.5);
+}

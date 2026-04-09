@@ -1,0 +1,269 @@
+---
+import Layout from '../layouts/Layout.astro'
+---
+
+<Layout title="装甲纷争 — 坦克对战游戏">
+  <!-- Hero -->
+  <section class="relative overflow-hidden bg-gradient-to-b from-g-bg-deep via-g-bg-panel to-g-bg-deep">
+    <div class="max-w-5xl mx-auto px-4 py-20 text-center">
+      <h1 class="text-5xl md:text-6xl font-bold text-g-parchment tracking-tight">装甲纷争</h1>
+      <p class="mt-4 text-xl md:text-2xl text-g-gold">操控超过200辆历史坦克，体验激烈的装甲战斗！</p>
+      <p class="mt-4 max-w-2xl mx-auto text-g-text-secondary leading-relaxed">
+        从一战到冷战时期的各种历史上真实存在的坦克，在多种战场和模式中展开对战。无需肝线——所有车辆可立即使用，让你专注于纯粹的战斗体验。
+      </p>
+      <!-- Age rating -->
+      <div class="mt-6 inline-flex items-center gap-2 bg-g-bg-surface border border-g-divider rounded-lg px-4 py-2 text-sm">
+        <span class="bg-g-gold text-g-bg-deep font-bold px-2 py-0.5 rounded text-xs">16+</span>
+        <span class="text-g-text-secondary">适龄提示：本游戏适合16岁以上用户</span>
+      </div>
+
+      <!-- Download buttons -->
+      <div class="mt-6 flex flex-wrap justify-center gap-4">
+        <a
+          href="https://www.taptap.cn/app/145106"
+          target="_blank"
+          rel="noopener"
+          class="inline-flex items-center gap-2 bg-g-gold text-g-bg-deep font-bold px-8 py-3 rounded-xl hover:brightness-110 transition shadow-lg shadow-g-gold-dim"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd" />
+          </svg>
+          从 TapTap 下载
+        </a>
+        <a
+          href="https://www.3839.com/a/103869.htm"
+          target="_blank"
+          rel="noopener"
+          class="inline-flex items-center gap-2 border border-g-gold text-g-gold font-semibold px-8 py-3 rounded-xl hover:bg-g-gold-dim transition"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd" />
+          </svg>
+          从好游快爆下载
+        </a>
+      </div>
+      <div class="mt-3 flex flex-wrap justify-center gap-4 text-xs text-g-text-tertiary">
+        <a href="https://beian.miit.gov.cn/" target="_blank" class="hover:text-g-text-secondary transition-colors">
+          TapTap 备案：沪ICP备15036213号-2A
+        </a>
+        <span class="text-g-divider">|</span>
+        <a href="https://beian.miit.gov.cn/" target="_blank" class="hover:text-g-text-secondary transition-colors">
+          好游快爆备案：闽ICP备18008307号-69A（厦门游乐互动科技有限公司）
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Screenshots -->
+  <section class="max-w-5xl mx-auto px-4 -mt-4 relative z-10">
+    <div class="grid gap-4 sm:grid-cols-2">
+      <img
+        src="/game-1.jpg"
+        alt="游戏截图1"
+        class="rounded-xl border border-g-border shadow-2xl w-full h-auto object-cover hover:scale-[1.02] transition-transform duration-300"
+        loading="lazy"
+      />
+      <img
+        src="/game-2.jpg"
+        alt="游戏截图2"
+        class="rounded-xl border border-g-border shadow-2xl w-full h-auto object-cover hover:scale-[1.02] transition-transform duration-300"
+        loading="lazy"
+      />
+    </div>
+  </section>
+
+  <!-- Game Modes -->
+  <section class="max-w-5xl mx-auto px-4 py-16">
+    <h2 class="text-3xl font-bold text-g-parchment mb-2">游戏模式</h2>
+    <div class="w-12 h-1 bg-g-gold rounded mb-8"></div>
+
+    <!-- Offline -->
+    <h3 class="text-lg font-semibold text-g-parchment mb-4">离线游戏模式</h3>
+    <div class="grid gap-4 sm:grid-cols-2 mb-8">
+      <div class="bg-g-bg-panel border border-g-divider rounded-xl p-6 hover:border-g-gold/30 transition-colors">
+        <h4 class="text-base font-semibold text-g-gold mb-2">遭遇战模式</h4>
+        <p class="text-g-text-secondary text-sm leading-relaxed">参与快速激烈的战斗，你可以在开放的战斗环境中与AI对战。</p>
+      </div>
+      <div class="bg-g-bg-panel border border-g-divider rounded-xl p-6 hover:border-g-gold/30 transition-colors">
+        <h4 class="text-base font-semibold text-g-gold mb-2">N vs N 闪电战</h4>
+        <p class="text-g-text-secondary text-sm leading-relaxed">体验大规模团队战斗，协调和策略是胜利的关键。</p>
+      </div>
+      <div class="bg-g-bg-panel border border-g-divider rounded-xl p-6 hover:border-g-gold/30 transition-colors">
+        <h4 class="text-base font-semibold text-g-gold mb-2">占点模式</h4>
+        <p class="text-g-text-secondary text-sm leading-relaxed">控制地图上的战略点，以获得战斗的优势。</p>
+      </div>
+      <div class="bg-g-bg-panel border border-g-divider rounded-xl p-6 hover:border-g-gold/30 transition-colors">
+        <h4 class="text-base font-semibold text-g-gold mb-2">阵营战</h4>
+        <p class="text-g-text-secondary text-sm leading-relaxed">选择不同阵营参战，体验阵营间的装甲对决。</p>
+      </div>
+    </div>
+
+    <!-- Online -->
+    <h3 class="text-lg font-semibold text-g-parchment mb-4">在线多人游戏模式</h3>
+    <div class="grid gap-4 sm:grid-cols-3">
+      <div class="bg-g-bg-panel border border-g-divider rounded-xl p-6 hover:border-g-gold/30 transition-colors">
+        <h4 class="text-base font-semibold text-g-gold mb-2">遭遇战模式</h4>
+        <p class="text-g-text-secondary text-sm leading-relaxed">在竞争激烈的快速战斗中与其他玩家一较高下。</p>
+      </div>
+      <div class="bg-g-bg-panel border border-g-divider rounded-xl p-6 hover:border-g-gold/30 transition-colors">
+        <h4 class="text-base font-semibold text-g-gold mb-2">占点模式</h4>
+        <p class="text-g-text-secondary text-sm leading-relaxed">与团队合作，在紧张的多人对战中争夺控制点。</p>
+      </div>
+      <div class="bg-g-bg-panel border border-g-divider rounded-xl p-6 hover:border-g-gold/30 transition-colors">
+        <h4 class="text-base font-semibold text-g-gold mb-2">茶话会</h4>
+        <p class="text-g-text-secondary text-sm leading-relaxed">与朋友享受有趣的闲暇时光。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="bg-g-bg-panel border-y border-g-divider">
+    <div class="max-w-5xl mx-auto px-4 py-16">
+      <h2 class="text-3xl font-bold text-g-parchment mb-2">核心特色</h2>
+      <div class="w-12 h-1 bg-g-gold rounded mb-8"></div>
+
+      <div class="bg-g-bg-surface border border-g-divider rounded-xl p-8 text-g-text-secondary leading-relaxed">
+        <p>
+          无需爬科技树或刷取游戏币，所有车辆均可立即使用，让你可以立即驾驶任何你喜欢的坦克、自行火炮或装甲车辆投入战斗。这样你就可以专注于享受激烈的战斗体验。
+        </p>
+      </div>
+
+      <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 mt-8">
+        <div class="flex items-start gap-3">
+          <span class="mt-1 w-2 h-2 rounded-full bg-g-gold shrink-0"></span>
+          <div>
+            <h3 class="font-semibold text-g-parchment">模块化伤害系统</h3>
+            <p class="text-g-text-secondary text-sm">模拟炮弹碎片对车辆组件和乘员的损伤，影响坦克性能。同时提供血条模式供新手快速上手。</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-3">
+          <span class="mt-1 w-2 h-2 rounded-full bg-g-gold shrink-0"></span>
+          <div>
+            <h3 class="font-semibold text-g-parchment">真实弹道物理</h3>
+            <p class="text-g-text-secondary text-sm">精确的弹道计算与物理引擎，还原真实的炮弹飞行轨迹与穿透效果。</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-3">
+          <span class="mt-1 w-2 h-2 rounded-full bg-g-gold shrink-0"></span>
+          <div>
+            <h3 class="font-semibold text-g-parchment">毁伤回放系统</h3>
+            <p class="text-g-text-secondary text-sm">战斗结束后可回放关键毁伤瞬间，了解每一发炮弹的伤害路径。</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-3">
+          <span class="mt-1 w-2 h-2 rounded-full bg-g-gold shrink-0"></span>
+          <div>
+            <h3 class="font-semibold text-g-parchment">热成像与夜视</h3>
+            <p class="text-g-text-secondary text-sm">支持热成像和夜视仪，在不同环境下获得战术优势。</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-3">
+          <span class="mt-1 w-2 h-2 rounded-full bg-g-gold shrink-0"></span>
+          <div>
+            <h3 class="font-semibold text-g-parchment">独立悬挂系统</h3>
+            <p class="text-g-text-secondary text-sm">真实的悬挂物理，坦克在不同地形上呈现不同的行驶姿态。</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-3">
+          <span class="mt-1 w-2 h-2 rounded-full bg-g-gold shrink-0"></span>
+          <div>
+            <h3 class="font-semibold text-g-parchment">履带断带与弹药架殉爆</h3>
+            <p class="text-g-text-secondary text-sm">真实的战损机制，履带可被击断，弹药架命中可引发殉爆。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="max-w-5xl mx-auto px-4 py-16">
+    <h2 class="text-3xl font-bold text-g-parchment mb-2">关于游戏</h2>
+    <div class="w-12 h-1 bg-g-gold rounded mb-8"></div>
+    <div class="bg-g-bg-panel border border-g-divider rounded-xl p-8 space-y-4 text-g-text-secondary leading-relaxed">
+      <p>
+        在这款创新的坦克对战游戏中，玩家将体验到前所未有的战斗冲击和策略深度。游戏支持多种模式，包括占点模式、遭遇战、闪电战和阵营战，还提供了一个独特的试车场，让玩家可以在进入真正的战斗前测试和调整他们的战斗单位。
+      </p>
+      <p>
+        在占点模式中，玩家需要运用智谋和战术，占领并保持关键的战略点位。每个点位的占领都将为玩家带来资源和优势，但同时也需要防守，防止敌人夺回。遭遇战模式则是一场纯粹的力量对抗，双方在特定地图上进行直接的军事冲突，考验玩家的战术布局和实时反应能力。
+      </p>
+      <p>
+        闪电战模式则要求玩家快速行动，通过突袭和迅速部署来压倒敌人。这些多样的游戏模式不仅提供了丰富的游戏体验，也让玩家可以根据自己的喜好选择合适的挑战。
+      </p>
+    </div>
+  </section>
+
+  <!-- Game Info -->
+  <section class="max-w-5xl mx-auto px-4 pb-16">
+    <div class="bg-g-bg-surface border border-g-divider rounded-xl p-8">
+      <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4 text-center">
+        <div>
+          <p class="text-3xl font-bold text-g-gold">200+</p>
+          <p class="text-g-text-secondary text-sm mt-1">历史坦克</p>
+        </div>
+        <div>
+          <p class="text-3xl font-bold text-g-gold">8.7</p>
+          <p class="text-g-text-secondary text-sm mt-1">TapTap 评分</p>
+        </div>
+        <div>
+          <p class="text-3xl font-bold text-g-gold">7</p>
+          <p class="text-g-text-secondary text-sm mt-1">游戏模式</p>
+        </div>
+        <div>
+          <p class="text-3xl font-bold text-g-gold">472MB</p>
+          <p class="text-g-text-secondary text-sm mt-1">安装包大小</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Partnership -->
+  <section class="max-w-5xl mx-auto px-4 pb-16">
+    <div class="bg-g-bg-panel border border-g-gold/20 rounded-xl p-8 text-center">
+      <p class="text-sm text-g-gold font-semibold tracking-widest uppercase mb-3">诚邀合作伙伴</p>
+      <h2 class="text-2xl font-bold text-g-parchment">装甲纷争 正在寻求专业的出版社与代理商合作</h2>
+      <p class="mt-4 max-w-2xl mx-auto text-g-text-secondary leading-relaxed">
+        以更好地服务中国玩家市场。我们特别希望与<strong class="text-g-parchment">战火互娱</strong>建立合作关系，相信其丰富的游戏发行经验和强大的市场推广能力能够为《装甲纷争》带来更好的发展机遇。
+      </p>
+      <p class="mt-4 text-g-text-secondary">
+        如果您是游戏发行商或代理商，并对《装甲纷争》感兴趣，欢迎联系我们进行商务洽谈。
+      </p>
+      <a
+        href="mailto:message@windyverse.net"
+        class="mt-6 inline-flex items-center gap-2 border border-g-gold text-g-gold font-semibold px-6 py-2.5 rounded-xl hover:bg-g-gold-dim transition"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+          <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+        </svg>
+        message@windyverse.net
+      </a>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="bg-gradient-to-r from-g-bg-panel to-g-bg-surface border-y border-g-divider">
+    <div class="max-w-5xl mx-auto px-4 py-12 text-center">
+      <h2 class="text-2xl font-bold text-g-parchment">准备好驾驶你的坦克了吗？</h2>
+      <p class="mt-2 text-g-text-secondary">免费下载，所有坦克即刻解锁</p>
+      <div class="mt-6 flex flex-wrap justify-center gap-4">
+        <a
+          href="https://www.taptap.cn/app/145106"
+          target="_blank"
+          rel="noopener"
+          class="inline-flex items-center gap-2 bg-g-gold text-g-bg-deep font-bold px-8 py-3 rounded-xl hover:brightness-110 transition shadow-lg shadow-g-gold-dim"
+        >
+          从 TapTap 下载
+        </a>
+        <a
+          href="https://www.3839.com/a/103869.htm"
+          target="_blank"
+          rel="noopener"
+          class="inline-flex items-center gap-2 border border-g-gold text-g-gold font-semibold px-8 py-3 rounded-xl hover:bg-g-gold-dim transition"
+        >
+          从好游快爆下载
+        </a>
+      </div>
+      <p class="mt-4 text-xs text-g-text-tertiary">开发商：WindyVerse Pte. Ltd. · 国内代理商：Shanghaiwindy (王诗江) · 安卓 8.0+ · 适龄 16+</p>
+    </div>
+  </section>
+</Layout>
